@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Production Engineer Toolkit | Bonita McBride</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <script type="module" src="script.js"></script>
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ledger&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body
+    class="bg-slate-50 flex flex-col gap-12 max-w-2xl mx-auto p-4 md:p-12 font-serif text-slate-800"
+  >
+    <header class="flex">
+      <div>
+        <h1 class="font-bold text-lg">Bonita McBride</h1>
+        <p>Design + Code</p>
+        <p>bonita.design@proton.me</p>
+      </div>
+      <nav class="ml-auto">
+        <a
+          href="./../index.html"
+          class="underline decoration-solid hover:decoration-wavy hover:text-cyan-600"
+          >Return to Home</a
+        >
+      </nav>
+    </header>
+
+    <main class="flex flex-col gap-10" role="main">
+      <section class="flex flex-col gap-2">
+        <h2 class="font-bold text-lg">Production Engineer Toolkit</h2>
+        <p class="text-justify text-slate-600">
+          To streamline and simplify the workflow of production engineers, we
+          created a toolkit aimed at consolidating task management and report
+          access into a single, user-friendly platform. Production engineers
+          often face information overload due to fragmented tools and multiple
+          reporting systems. By centralizing these elements, we aim to enhance
+          productivity, improve information access, and ensure actionable tasks
+          are tracked seamlessly.
+        </p>
+      </section>
+
+      <section class="flex flex-col gap-2">
+        <div class="grid md:grid-cols-2 gap-4">
+          <div>
+            <h3 class="font-semibold">Client</h3>
+            <p class="text-slate-600">A leading oil and gas company</p>
+          </div>
+          <div>
+            <h3 class="font-semibold">Role</h3>
+            <p class="text-slate-600">UX Designer</p>
+          </div>
+          <div class="">
+            <h3 class="font-semibold">Team</h3>
+            <p class="text-slate-600">UX Designer</p>
+            <p class="text-slate-600">Product Owner</p>
+            <p class="text-slate-600">Business Analyst</p>
+            <p class="text-slate-600">3 Developers</p>
+            <p class="text-slate-600">QA Tester</p>
+          </div>
+          <div>
+            <h3 class="font-semibold">Timeframe</h3>
+            <p class="text-slate-600">February 2024 - Present</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="flex flex-col gap-2">
+        <h2 class="font-bold text-lg">Problem Space</h2>
+        <p class="text-justify text-slate-600">
+          Production engineers receive tasks from disparate sources, including
+          hard-to-track emails and various tools. Each task requires thorough
+          review of multiple reports before a decision can be made.
+        </p>
+        <p class="text-justify text-slate-600">
+          This fragmented workflow often leads to information overload, with
+          engineers managing multiple open windows and tabs. Additionally,
+          actions taken on tasks are rarely tracked, causing them to become lost
+          to history and making it difficult to monitor progress.
+        </p>
+        <img
+          src="./assets/toolkit_problemSpace.png"
+          alt="Diagram showing workflow issues faced by production engineers"
+          class="rounded-sm"
+        />
+      </section>
+
+      <section class="flex flex-col gap-2">
+        <h2 class="font-bold text-lg">Solution</h2>
+        <p class="text-justify text-slate-600">
+          The goal was to create a centralized application view where tasks,
+          reports, and necessary tools are accessible in one place. This
+          solution also had to meet business requirements for data tracking
+          while respecting engineers' personalized workflows.
+        </p>
+        <img
+          src="./assets/toolkit_solution.png"
+          alt="Toolkit solution interface with integrated task and report features"
+          class="rounded-sm cursor-pointer"
+          onclick="openDialog('./assets/toolkit_solution.png')"
+        />
+        <dialog
+          id="lightboxDialog"
+          role="dialog"
+          aria-labelledby="dialogTitle"
+          class="p-2 rounded-sm"
+        >
+          <h3 id="dialogTitle" class="sr-only">Image Preview</h3>
+          <button
+            onclick="document.getElementById('lightboxDialog').close()"
+            class="absolute h-8 w-8 top-1 right-1 text-slate-900 text-xl bg-white font-bold"
+          >
+            &times;
+          </button>
+          <img
+            id="dialogImage"
+            alt="Toolkit solution interface with integrated task and report features"
+            class="rounded-sm max-w-full max-h-screen object-contain"
+          />
+        </dialog>
+        <ul class="flex flex-col gap-2 text-slate-600 text-justify">
+          <li class="flex flex-col gap-1">
+            <strong>Centralized Task Management</strong>
+            Displays table of incoming analytics and request tasks, providing a
+            clear overview of all actionable items in one place.
+          </li>
+          <li class="flex flex-col gap-1 text-justify">
+            <strong>Drill-Down Capability</strong> Allows users to click on a
+            record to view a detailed page with all relevant information.
+          </li>
+          <li class="flex flex-col gap-1 text-justify">
+            <strong>Report Integration</strong> Embeds reports within an iframe
+            on the detail page, enabling users to navigate through multiple
+            reports without leaving the app.
+          </li>
+          <li class="flex flex-col gap-1 text-justify">
+            <strong>Ability to Take Action</strong> Enables quick actions and
+            decision tracking, allowing the business to monitor progress and
+            identify improvement opportunities.
+          </li>
+        </ul>
+      </section>
+
+      <section class="flex flex-col gap-2">
+        <h2 class="font-bold text-lg">Modal vs. Dedicated Page Design</h2>
+        <p class="text-justify text-slate-600">
+          The client initially preferred a modal to house all task details,
+          reports, and actions in one place. Recognizing the limitations this
+          would impose on usability and future scalability, I developed both a
+          modal-based and a dedicated page design. By demonstrating the
+          advantages of a separate page—clearer layout and capacity for
+          growth—the client agreed this approach better aligned with long-term
+          goals.
+        </p>
+        <!-- IMG and dialog lightbox-->
+        <img
+          src="./assets/toolkit_modal.png"
+          alt="Modal-based design for task details, reports, and actions within the toolkit, displaying a compact, multi-section layout."
+          class="rounded-sm cursor-pointer"
+          onclick="openDialog('./assets/toolkit_modal.png')"
+        />
+        <dialog
+          id="lightboxDialog"
+          role="dialog"
+          aria-labelledby="dialogTitle"
+          class="p-2 rounded-sm"
+        >
+          <h3 id="dialogTitle" class="sr-only">Image Preview</h3>
+          <button
+            onclick="document.getElementById('lightboxDialog').close()"
+            class="absolute top-4 right-4 text-slate-900 text-xl font-bold"
+          >
+            &times;
+          </button>
+          <img
+            src="./assets/toolkit_modal.png"
+            alt="Modal-based design for task details, reports, and actions within the toolkit, displaying a compact, multi-section layout."
+            class="rounded-sm max-w-full max-h-screen object-contain"
+          />
+        </dialog>
+        <p class="text-justify text-slate-600">
+          Traditional modals are built for simple, isolated tasks, making it
+          difficult to display complex, multi-section layouts. Key actions like
+          dismiss, assign, and complete become hard to access, limiting
+          scalability and creating a cluttered, unintuitive interface as new
+          features are added.
+        </p>
+        <img
+          src="./assets/toolkit_page.png"
+          alt="Dedicated page design showcasing a detailed layout with task information and actions, offering enhanced usability over the modal layout."
+          class="rounded-sm cursor-pointer"
+          onclick="openDialog('./assets/toolkit_page.png')"
+        />
+        <dialog
+          id="lightboxDialog"
+          role="dialog"
+          aria-labelledby="dialogTitle"
+          class="p-2 rounded-sm"
+        >
+          <h3 id="dialogTitle" class="sr-only">Image Preview</h3>
+          <button
+            onclick="document.getElementById('lightboxDialog').close()"
+            class="absolute top-4 right-4 text-slate-900 text-xl font-bold"
+          >
+            &times;
+          </button>
+          <img
+            src="./assets/toolkit_page.png"
+            alt="Dedicated page design showcasing a detailed layout with task information and actions, offering enhanced usability over the modal layout."
+            class="rounded-sm max-w-full max-h-screen object-contain"
+          />
+        </dialog>
+        <p class="text-justify text-slate-600">
+          The dedicated page design provides a clear, spacious layout for
+          displaying detailed task information and actions in one place,
+          avoiding the cramped feel of a modal. Key actions like dismiss,
+          assign, and complete are intuitively accessible, with room to add more
+          features in the future. This layout enhances usability and supports
+          scalability as the application grows.
+        </p>
+      </section>
+
+      <section class="flex flex-col gap-2">
+        <h2 class="font-bold text-lg">Impact and Feedback</h2>
+        <p class="text-justify text-slate-600">
+          Prototypes of the toolkit have received strong, positive feedback from
+          both upper management and production engineers. There’s high
+          anticipation for the product, with stakeholders expressing a desire
+          for immediate release, underscoring the value and impact of this
+          solution. Although the toolkit has not yet shipped, it is expected to
+          launch in early 2025, with high expectations for improved efficiency
+          and productivity.
+        </p>
+        <img
+          src="./assets/insight_hub.gif"
+          alt="Animated prototype of the Insight Hub, illustrating user interaction with the toolkit interface."
+          class="rounded-sm"
+        />
+      </section>
+      <section class="flex flex-col gap-2">
+        <h2 class="font-bold text-lg">Key Challenges</h2>
+        <p class="text-justify text-slate-600">
+          One key challenge was coordinating with the team responsible for the
+          existing system our toolkit needs to integrate with, as their
+          priorities sometimes conflicted with ours. To expedite their work and
+          help them address their backlog before reaching our integration needs,
+          I created detailed design mockups and process flows for the necessary
+          features. By clarifying requirements and providing visual references,
+          I reduced back-and-forth communication, enabling their team to move
+          faster and making it easier for them to support our integration.
+        </p>
+      </section>
+    </main>
+    <footer class="text-slate-400">© 2024–Present, Bonita McBride</footer>
+
+    <script>
+      function openDialog(imageSrc) {
+        document.getElementById("dialogImage").src = imageSrc;
+        document.getElementById("lightboxDialog").showModal();
+      }
+    </script>
+  </body>
+</html>

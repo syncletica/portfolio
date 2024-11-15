@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>PWA for Field Tasks | Bonita McBride</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <script type="module" src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/db7e0a4635.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="./output.css" rel="stylesheet" />
+    <script>
+      function openDialog(imageSrc) {
+        document.getElementById("dialogImage").src = imageSrc;
+        document.getElementById("lightboxDialog").showModal();
+      }
+    </script>
+  </head>
+
+  <body
+    class="bg-slate-50 flex flex-col gap-12 max-w-2xl mx-auto p-4 md:p-12 font-serif text-slate-800"
+  >
+    <header class="flex">
+      <div>
+        <h1 class="font-bold text-lg">Bonita McBride</h1>
+        <p>Design + Code</p>
+        <p>bonita.design@proton.me</p>
+      </div>
+      <nav class="ml-auto">
+        <a
+          href="./../index.html"
+          class="underline decoration-solid hover:decoration-wavy hover:text-cyan-600"
+          >Return to Home</a
+        >
+      </nav>
+    </header>
+
+    <main class="flex flex-col gap-10" role="main">
+      <section class="flex flex-col gap-2">
+        <h2 class="font-bold text-lg">Progressive Web App for Field Tasks</h2>
+        <p class="text-justify text-slate-600">
+          The goal was to create a Progressive Web App (PWA) that allows
+          contractors and employees to complete tasks in the field when the
+          native app is unavailable. I started by analyzing the workflow of the
+          current mobile app to ensure a consistent experience. Then, I designed
+          desktop mockups to present a new layout tailored for larger screens
+          while maintaining a seamless transition to mobile.
+        </p>
+        <img
+          src="./assets/wom.png"
+          alt="A desktop view of the work order and work operations pages."
+          class="rounded-sm cursor-pointer"
+          onclick="openDialog('./assets/wom.png')"
+          onkeydown="if (event.key === 'Enter' || event.key === ' ') openDialog('./assets/wom.png')"
+        />
+        <dialog
+          id="lightboxDialog"
+          role="dialog"
+          aria-labelledby="dialogTitle"
+          class="p-2 rounded-sm"
+          aria-hidden="true"
+        >
+          <h3 id="dialogTitle" class="sr-only">Image Preview</h3>
+          <button
+            onclick="document.getElementById('lightboxDialog').close()"
+            class="absolute h-8 w-8 top-1 right-1 text-slate-900 text-xl bg-white font-bold"
+            aria-label="Close dialog"
+          >
+            &times;
+          </button>
+          <img
+            id="dialogImage"
+            alt="A desktop view of the work order and work operations pages."
+            class="rounded-sm max-w-full max-h-screen object-contain"
+          />
+        </dialog>
+        <img
+          src="./assets/wom_mobile.png"
+          alt="A mobile view of the work order, work operations, complete work, and add attachment pages."
+          class="rounded-sm cursor-pointer"
+          onclick="openDialog('./assets/wom_mobile.png')"
+        />
+        <dialog
+          id="lightboxDialog"
+          role="dialog"
+          aria-labelledby="dialogTitle"
+          class="p-2 rounded-sm"
+          aria-hidden="true"
+        >
+          <h3 id="dialogTitle" class="sr-only">Image Preview</h3>
+          <button
+            onclick="document.getElementById('lightboxDialog').close()"
+            class="absolute h-8 w-8 top-1 right-1 text-slate-900 text-xl bg-white font-bold"
+            aria-label="Close dialog"
+          >
+            &times;
+          </button>
+          <img
+            id="dialogImage"
+            alt="A mobile view of the work order, work operations, complete work, and add attachment pages."
+            class="rounded-sm max-w-full max-h-screen object-contain"
+          />
+        </dialog>
+        <p class="text-justify text-slate-600">
+          To emphasize the responsive behavior, I built a simple coded prototype
+          instead of relying on additional static Figma frames. This interactive
+          prototype allowed the dev team to explore the design in action,
+          streamlining their workflow by reducing the need to navigate static
+          canvases.
+        </p>
+        <a
+          href="https://syncletica.github.io/work_order_management/"
+          target="_blank"
+          class="underline decoration-solid hover:decoration-wavy hover:text-cyan-600"
+          >Link to Coded Prototype<i class="fa-solid fa-arrow-right fa-xs"></i
+        ></a>
+      </section>
+    </main>
+    <footer class="text-slate-400">© 2024–Present, Bonita McBride</footer>
+  </body>
+</html>
