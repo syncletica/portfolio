@@ -8,8 +8,6 @@
       name="description"
       content="Bonita McBride is a UX designer with 3+ years of experience crafting thoughtful, user-centered designs for industries like energy, medical, and community services. Skilled in both design and coding, Bonita specializes in creating polished prototypes and delivering innovative digital solutions."
     />
-
-    <script type="module" src="script.js"></script>
     <link href="./src/output.css" rel="stylesheet" />
   </head>
 
@@ -19,7 +17,11 @@
     <header>
       <h1 class="font-bold text-lg">Bonita McBride</h1>
       <p>Design + Code</p>
-      <p>bonita.design@proton.me</p>
+      <script>
+        var user = "bonita.design";
+        var domain = "proton.me";
+        document.write(user + "&#64;" + domain);
+    </script>
     </header>
     <main class="flex flex-col gap-10" role="main">
       <section class="flex flex-col gap-2">
