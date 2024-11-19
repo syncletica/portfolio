@@ -47,15 +47,14 @@
           while maintaining a seamless transition to mobile.
         </p>
         <img
-          src="./assets/wom.png"
+          src="./assets/wom.webp"
           alt="A desktop view of the work order and work operations pages."
           class="rounded-sm cursor-pointer"
-          onclick="openDialog('./assets/wom.png')"
+          onclick="openDialog('./assets/wom.webp')"
           onkeydown="if (event.key === 'Enter' || event.key === ' ') openDialog('./assets/wom.png')"
-        />
+        >
         <dialog
           id="lightboxDialog"
-          role="dialog"
           aria-labelledby="dialogTitle"
           class="p-2 rounded-sm"
           aria-hidden="true"
@@ -69,20 +68,20 @@
             &times;
           </button>
           <img
+            src="./assets/wom.webp"
             id="dialogImage"
             alt="A desktop view of the work order and work operations pages."
             class="rounded-sm max-w-full max-h-screen object-contain"
-          />
+          >
         </dialog>
         <img
-          src="./assets/wom_mobile.png"
+          src="./assets/wom_mobile.webp"
           alt="A mobile view of the work order, work operations, complete work, and add attachment pages."
           class="rounded-sm cursor-pointer"
-          onclick="openDialog('./assets/wom_mobile.png')"
-        />
+          onclick="openDialog('./assets/wom_mobile.webp')"
+        >
         <dialog
           id="lightboxDialog"
-          role="dialog"
           aria-labelledby="dialogTitle"
           class="p-2 rounded-sm"
           aria-hidden="true"
@@ -96,10 +95,11 @@
             &times;
           </button>
           <img
+            src="./assets/wom_mobile.webp"
             id="dialogImage"
             alt="A mobile view of the work order, work operations, complete work, and add attachment pages."
             class="rounded-sm max-w-full max-h-screen object-contain"
-          />
+          >
         </dialog>
         <p class="text-justify text-slate-600">
           To emphasize the responsive behavior, I built a simple coded prototype
