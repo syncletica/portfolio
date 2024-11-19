@@ -4,7 +4,7 @@
     <title>PWA for Field Tasks | Bonita McBride</title>
     <meta charset="UTF-8" >
     <meta name="viewport" content="width=device-width" >
-    <link href="./output.css" rel="stylesheet" >
+    <link href="./../src/output.css" rel="stylesheet" >
     <script>
       function openDialog(imageSrc) {
         document.getElementById("dialogImage").src = imageSrc;
@@ -47,11 +47,11 @@
           while maintaining a seamless transition to mobile.
         </p>
         <img
-          src="./assets/wom.webp"
+          src="./../src/assets/wom.png"
           alt="A desktop view of the work order and work operations pages."
           class="rounded-sm cursor-pointer"
-          onclick="openDialog('./assets/wom.webp')"
-          onkeydown="if (event.key === 'Enter' || event.key === ' ') openDialog('./assets/wom.png')"
+          onclick="openDialog('./../src/assets/wom.png')"
+          onkeydown="if (event.key === 'Enter' || event.key === ' ') openDialog('../../src/assets/wom.png')"
         >
         <dialog
           id="lightboxDialog"
@@ -68,17 +68,17 @@
             &times;
           </button>
           <img
-            src="./assets/wom.webp"
+            src="./../src/assets/wom_mobile.webp"
             id="dialogImage"
             alt="A desktop view of the work order and work operations pages."
             class="rounded-sm max-w-full max-h-screen object-contain"
           >
         </dialog>
         <img
-          src="./assets/wom_mobile.webp"
+          src="./../src/assets/wom_mobile.webp"
           alt="A mobile view of the work order, work operations, complete work, and add attachment pages."
           class="rounded-sm cursor-pointer"
-          onclick="openDialog('./assets/wom_mobile.webp')"
+          onclick="openDialog('./../src/assets/wom_mobile.webp')"
         >
         <dialog
           id="lightboxDialog"
@@ -95,7 +95,7 @@
             &times;
           </button>
           <img
-            src="./assets/wom_mobile.webp"
+            src="./../src/assets/wom_mobile.webp"
             id="dialogImage"
             alt="A mobile view of the work order, work operations, complete work, and add attachment pages."
             class="rounded-sm max-w-full max-h-screen object-contain"
