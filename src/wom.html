@@ -2,13 +2,9 @@
 <html lang="en">
   <head>
     <title>PWA for Field Tasks | Bonita McBride</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <script
-      src="https://kit.fontawesome.com/db7e0a4635.js"
-      crossorigin="anonymous"
-    ></script>
-    <link href="./output.css" rel="stylesheet" />
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width" >
+    <link href="./output.css" rel="stylesheet" >
     <script>
       function openDialog(imageSrc) {
         document.getElementById("dialogImage").src = imageSrc;
@@ -24,7 +20,11 @@
       <div>
         <h1 class="font-bold text-lg">Bonita McBride</h1>
         <p>Design + Code</p>
-        <p>bonita<b class="hidden">gecko</b>.design@proton.<b class="hidden">gecko</b>me</p>
+        <p>
+          bonita<b class="hidden">gecko</b>.design@proton.<b class="hidden"
+            >gecko</b
+          >me
+        </p>
       </div>
       <nav class="ml-auto">
         <a
@@ -35,7 +35,7 @@
       </nav>
     </header>
 
-    <main class="flex flex-col gap-10" role="main">
+    <main class="flex flex-col gap-10">
       <section class="flex flex-col gap-2">
         <h2 class="font-bold text-lg">Progressive Web App for Field Tasks</h2>
         <p class="text-justify text-slate-600">
@@ -111,9 +111,29 @@
         <a
           href="https://syncletica.github.io/work_order_management/"
           target="_blank"
-          class="underline decoration-solid hover:decoration-wavy hover:text-cyan-600"
-          >Link to Coded Prototype<i class="fa-solid fa-arrow-right fa-xs"></i
-        ></a>
+          class="inline-flex items-center group text-slate-600 hover:text-cyan-600"
+        >
+          <span
+            class="underline decoration-solid transition-colors duration-200 ease-in-out hover:decoration-wavy hover:text-cyan-600"
+          >
+            Coded Prototype
+          </span>
+          <svg
+            class="inline-block transition-colors duration-200 ease-in-out group-hover:fill-cyan-600"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#64748b"
+          >
+            <g>
+              <path d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M16.004 9.414l-8.607 8.607-1.414-1.414L14.589 8H7.004V6h11v11h-2V9.414z"
+              />
+            </g>
+          </svg>
+        </a>
       </section>
     </main>
     <footer class="text-slate-600">© 2024–Present, Bonita McBride</footer>
