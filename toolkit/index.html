@@ -15,10 +15,10 @@
   </script>
 </head>
 
-<body class="bg-slate-50 flex flex-col gap-12 max-w-2xl mx-auto p-4 md:p-12 font-serif text-slate-800">
+<body class="bg-slate-50 flex flex-col gap-20 max-w-2xl mx-auto p-4 md:p-12 font-sans text-base text-slate-800">
   <header class="flex">
     <div>
-      <h1 class="font-bold text-lg">Bonita McBride</h1>
+      <h1 class="font-bold ">Bonita McBride</h1>
       <p>Design + Code</p>
       <p>
         bonita<b class="hidden">gecko</b>.design@proton.<b class="hidden">gecko</b>me
@@ -31,8 +31,8 @@
 
   <main class="flex flex-col gap-10">
     <section class="flex flex-col gap-2">
-      <h2 class="font-bold text-lg">Production Engineer Toolkit</h2>
-      <p class="text-justify text-slate-600">
+      <h2 class="font-bold ">Production Engineer Toolkit</h2>
+      <p class=" text-slate-600">
         To streamline and simplify the workflow of production engineers, we
         created a toolkit aimed at consolidating task management and report
         access into a single, user-friendly platform. Production engineers
@@ -42,40 +42,38 @@
         are tracked seamlessly.
       </p>
     </section>
-
-    <section class="flex flex-col gap-2">
-      <div class="grid md:grid-cols-2 gap-4">
-        <div>
-          <h3 class="font-semibold">Client</h3>
-          <p class="text-slate-600">A leading oil and gas company</p>
-        </div>
-        <div>
-          <h3 class="font-semibold">Role</h3>
-          <p class="text-slate-600">UX Designer</p>
-        </div>
-        <div class="">
-          <h3 class="font-semibold">Team</h3>
-          <p class="text-slate-600">UX Designer</p>
-          <p class="text-slate-600">Product Owner</p>
-          <p class="text-slate-600">Business Analyst</p>
-          <p class="text-slate-600">3 Developers</p>
-          <p class="text-slate-600">QA Tester</p>
-        </div>
-        <div>
-          <h3 class="font-semibold">Timeframe</h3>
-          <p class="text-slate-600">February 2024 - Present</p>
-        </div>
+    <section class="grid md:grid-cols-2 gap-4">
+      <div class="">
+        <h3 class="font-semibold">Client</h3>
+        <p class="text-slate-600">A leading oil and gas company</p>
+      </div>
+      <div>
+        <h3 class="font-semibold">Role</h3>
+        <p class="text-slate-600">UX Designer</p>
+      </div>
+      <div class="">
+        <h3 class="font-semibold">Team</h3>
+        <p class="text-slate-600">UX Designer</p>
+        <p class="text-slate-600">Product Owner</p>
+        <p class="text-slate-600">Business Analyst</p>
+        <p class="text-slate-600">3 Developers</p>
+        <p class="text-slate-600">QA Tester</p>
+      </div>
+      <div>
+        <h3 class="font-semibold">Timeframe</h3>
+        <p class="text-slate-600">February 2024 - Present</p>
       </div>
     </section>
 
+
     <section class="flex flex-col gap-2">
-      <h2 class="font-bold text-lg">Problem Space</h2>
-      <p class="text-justify text-slate-600">
+      <h2 class="font-bold ">Problem Space</h2>
+      <p class=" text-slate-600">
         Production engineers receive tasks from disparate sources, including
         hard-to-track emails and various tools. Each task requires thorough
         review of multiple reports before a decision can be made.
       </p>
-      <p class="text-justify text-slate-600">
+      <p class=" text-slate-600">
         This fragmented workflow often leads to information overload, with
         engineers managing multiple open windows and tabs. Additionally,
         actions taken on tasks are rarely tracked, causing them to become lost
@@ -86,8 +84,8 @@
     </section>
 
     <section class="flex flex-col gap-2">
-      <h2 class="font-bold text-lg">Solution</h2>
-      <p class="text-justify text-slate-600">
+      <h2 class="font-bold ">Solution</h2>
+      <p class=" text-slate-600">
         The goal was to create a centralized application view where tasks,
         reports, and necessary tools are accessible in one place. This
         solution also had to meet business requirements for data tracking
@@ -106,22 +104,22 @@
           alt="Toolkit solution interface with integrated task and report features"
           class="rounded-sm max-w-full max-h-screen object-contain" />
       </dialog>
-      <ul class="flex flex-col gap-2 text-slate-600 text-justify">
+      <ul class="flex flex-col gap-2 text-slate-600">
         <li class="flex flex-col gap-1">
           <strong>Centralized Task Management</strong>
           Displays table of incoming analytics and request tasks, providing a
           clear overview of all actionable items in one place.
         </li>
-        <li class="flex flex-col gap-1 text-justify">
+        <li class="flex flex-col gap-1">
           <strong>Drill-Down Capability</strong> Allows users to click on a
           record to view a detailed page with all relevant information.
         </li>
-        <li class="flex flex-col gap-1 text-justify">
+        <li class="flex flex-col gap-1">
           <strong>Report Integration</strong> Embeds reports within an iframe
           on the detail page, enabling users to navigate through multiple
           reports without leaving the app.
         </li>
-        <li class="flex flex-col gap-1 text-justify">
+        <li class="flex flex-col gap-1">
           <strong>Ability to Take Action</strong> Enables quick actions and
           decision tracking, allowing the business to monitor progress and
           identify improvement opportunities.
@@ -130,8 +128,8 @@
     </section>
 
     <section class="flex flex-col gap-2">
-      <h2 class="font-bold text-lg">Modal vs. Dedicated Page Design</h2>
-      <p class="text-justify text-slate-600">
+      <h2 class="font-bold ">Modal vs. Dedicated Page Design</h2>
+      <p class=text-slate-600">
         The client initially preferred a modal to house all task details,
         reports, and actions in one place. Recognizing the limitations this
         would impose on usability and future scalability, I developed both a
@@ -154,7 +152,7 @@
           alt="Modal-based design for task details, reports, and actions within the toolkit, displaying a compact, multi-section layout."
           class="rounded-sm max-w-full max-h-screen object-contain" />
       </dialog>
-      <p class="text-justify text-slate-600">
+      <p class=text-slate-600">
         Traditional modals are built for simple, isolated tasks, making it
         difficult to display complex, multi-section layouts. Key actions like
         dismiss, assign, and complete become hard to access, limiting
@@ -174,7 +172,7 @@
           alt="Dedicated page design showcasing a detailed layout with task information and actions, offering enhanced usability over the modal layout."
           class="rounded-sm max-w-full max-h-screen object-contain" />
       </dialog>
-      <p class="text-justify text-slate-600">
+      <p class=text-slate-600">
         The dedicated page design provides a clear, spacious layout for
         displaying detailed task information and actions in one place,
         avoiding the cramped feel of a modal. Key actions like dismiss,
@@ -185,8 +183,8 @@
     </section>
 
     <section class="flex flex-col gap-2">
-      <h2 class="font-bold text-lg">Impact and Feedback</h2>
-      <p class="text-justify text-slate-600">
+      <h2 class="font-bold ">Impact and Feedback</h2>
+      <p class=text-slate-600">
         Prototypes of the toolkit have received strong, positive feedback from
         both upper management and production engineers. There’s high
         anticipation for the product, with stakeholders expressing a desire
@@ -200,8 +198,8 @@
         class="rounded-sm" />
     </section>
     <section class="flex flex-col gap-2">
-      <h2 class="font-bold text-lg">Key Challenges</h2>
-      <p class="text-justify text-slate-600">
+      <h2 class="font-bold ">Key Challenges</h2>
+      <p class=text-slate-600">
         One key challenge was coordinating with the team responsible for the
         existing system our toolkit needs to integrate with, as their
         priorities sometimes conflicted with ours. To expedite their work and
