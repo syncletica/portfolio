@@ -9,8 +9,17 @@
   <link rel="icon" href="./../src/favicon.ico" type="image/x-icon">
   <script>
     function openDialog(imageSrc) {
-      document.getElementById("dialogImage").src = imageSrc;
-      document.getElementById("lightboxDialog").showModal();
+      // Find the next available dialog
+      let dialogNum = 1;
+      let dialog = document.getElementById(`lightboxDialog${dialogNum}`);
+      while (dialog && dialog.open) {
+        dialogNum++;
+        dialog = document.getElementById(`lightboxDialog${dialogNum}`);
+      }
+      if (dialog) {
+        document.getElementById(`dialogImage${dialogNum}`).src = imageSrc;
+        dialog.showModal();
+      }
     }
   </script>
 </head>
@@ -80,7 +89,7 @@
         to history and making it difficult to monitor progress.
       </p>
       <img src="./../src/assets/toolkit_problemSpace.png"
-        alt="Diagram showing workflow issues faced by production engineers" class="rounded-sm" />
+        alt="Diagram showing workflow issues faced by production engineers" class="rounded-sm" >
     </section>
 
     <section class="flex flex-col gap-2">
@@ -93,16 +102,15 @@
       </p>
       <img src="./../src/assets/toolkit_solution.png"
         alt="Toolkit solution interface with integrated task and report features" class="rounded-sm cursor-pointer"
-        onclick="openDialog('./../src/assets/toolkit_solution.png')" />
-      <dialog id="lightboxDialog" role="dialog" aria-labelledby="dialogTitle" class="p-2 rounded-sm">
-        <h3 id="dialogTitle" class="sr-only">Image Preview</h3>
-        <button onclick="document.getElementById('lightboxDialog').close()"
+        onclick="openDialog('./../src/assets/toolkit_solution.png')" >
+      <dialog id="lightboxDialog1" aria-labelledby="dialogTitle1" class="p-2 rounded-sm">
+        <h3 id="dialogTitle1" class="sr-only">Image Preview</h3>
+        <button onclick="document.getElementById('lightboxDialog1').close()"
           class="absolute h-8 w-8 top-1 right-1 text-slate-900 text-xl bg-white font-bold">
           &times;
         </button>
-        <img src="./../src/assets/toolkit_solution.png" id="dialogImage"
-          alt="Toolkit solution interface with integrated task and report features"
-          class="rounded-sm max-w-full max-h-screen object-contain" />
+        <img src="./../src/assets/toolkit_solution.png" id="dialogImage1" alt="Toolkit solution interface with integrated task and report features"
+          class="rounded-sm max-w-full max-h-screen object-contain" >
       </dialog>
       <ul class="flex flex-col gap-2 text-slate-600">
         <li class="flex flex-col gap-1">
@@ -129,7 +137,7 @@
 
     <section class="flex flex-col gap-2">
       <h2 class="font-bold ">Modal vs. Dedicated Page Design</h2>
-      <p class=text-slate-600">
+      <p class="text-slate-600">
         The client initially preferred a modal to house all task details,
         reports, and actions in one place. Recognizing the limitations this
         would impose on usability and future scalability, I developed both a
@@ -141,18 +149,18 @@
       <!-- IMG and dialog lightbox-->
       <img src="./../src/assets/toolkit_modal.png"
         alt="Modal-based design for task details, reports, and actions within the toolkit, displaying a compact, multi-section layout."
-        class="rounded-sm cursor-pointer" onclick="openDialog('./../src/assets/toolkit_modal.png')" />
-      <dialog id="lightboxDialog" role="dialog" aria-labelledby="dialogTitle" class="p-2 rounded-sm">
-        <h3 id="dialogTitle" class="sr-only">Image Preview</h3>
-        <button onclick="document.getElementById('lightboxDialog').close()"
-          class="absolute top-4 right-4 text-slate-900 text-xl font-bold">
+        class="rounded-sm cursor-pointer" onclick="openDialog('./../src/assets/toolkit_modal.png')" >
+      <dialog id="lightboxDialog2" aria-labelledby="dialogTitle2" class="p-2 rounded-sm">
+        <h3 id="dialogTitle2" class="sr-only">Image Preview</h3>
+        <button onclick="document.getElementById('lightboxDialog2').close()"
+          class="absolute h-8 w-8 top-1 right-1 text-slate-900 text-xl bg-white font-bold">
           &times;
         </button>
-        <img src="./../src/assets/toolkit_modal.png"
-          alt="Modal-based design for task details, reports, and actions within the toolkit, displaying a compact, multi-section layout."
-          class="rounded-sm max-w-full max-h-screen object-contain" />
+        <img src="./../src/assets/toolkit_modal.png" id="dialogImage2"
+          alt="Modal-based design for task details, reports, and actions within the toolkit."
+          class="rounded-sm max-w-full max-h-screen object-contain" >
       </dialog>
-      <p class=text-slate-600">
+      <p class="text-slate-600">
         Traditional modals are built for simple, isolated tasks, making it
         difficult to display complex, multi-section layouts. Key actions like
         dismiss, assign, and complete become hard to access, limiting
@@ -161,18 +169,18 @@
       </p>
       <img src="./../src/assets/toolkit_page.png"
         alt="Dedicated page design showcasing a detailed layout with task information and actions, offering enhanced usability over the modal layout."
-        class="rounded-sm cursor-pointer" onclick="openDialog('./../src/assets/toolkit_page.png')" />
-      <dialog id="lightboxDialog" role="dialog" aria-labelledby="dialogTitle" class="p-2 rounded-sm">
-        <h3 id="dialogTitle" class="sr-only">Image Preview</h3>
-        <button onclick="document.getElementById('lightboxDialog').close()"
-          class="absolute top-4 right-4 text-slate-900 text-xl font-bold">
+        class="rounded-sm cursor-pointer" onclick="openDialog('./../src/assets/toolkit_page.png')" >
+      <dialog id="lightboxDialog3" aria-labelledby="dialogTitle3" class="p-2 rounded-sm">
+        <h3 id="dialogTitle3" class="sr-only">Image Preview</h3>
+        <button onclick="document.getElementById('lightboxDialog3').close()"
+          class="absolute h-8 w-8 top-1 right-1 text-slate-900 text-xl bg-white font-bold">
           &times;
         </button>
-        <img src="./../src/assets/toolkit_page.png"
-          alt="Dedicated page design showcasing a detailed layout with task information and actions, offering enhanced usability over the modal layout."
-          class="rounded-sm max-w-full max-h-screen object-contain" />
+        <img src="./../src/assets/toolkit_page.png" id="dialogImage3"
+          alt="Dedicated page design showcasing a detailed layout with task information and actions."
+          class="rounded-sm max-w-full max-h-screen object-contain" >
       </dialog>
-      <p class=text-slate-600">
+      <p class="text-slate-600">
         The dedicated page design provides a clear, spacious layout for
         displaying detailed task information and actions in one place,
         avoiding the cramped feel of a modal. Key actions like dismiss,
@@ -184,7 +192,7 @@
 
     <section class="flex flex-col gap-2">
       <h2 class="font-bold ">Impact and Feedback</h2>
-      <p class=text-slate-600">
+      <p class="text-slate-600">
         Prototypes of the toolkit have received strong, positive feedback from
         both upper management and production engineers. There’s high
         anticipation for the product, with stakeholders expressing a desire
@@ -195,11 +203,11 @@
       </p>
       <img src="./../src/assets/insight_hub.gif"
         alt="Animated prototype of the Insight Hub, illustrating user interaction with the toolkit interface."
-        class="rounded-sm" />
+        class="rounded-sm" >
     </section>
     <section class="flex flex-col gap-2">
       <h2 class="font-bold ">Key Challenges</h2>
-      <p class=text-slate-600">
+      <p class="text-slate-600">
         One key challenge was coordinating with the team responsible for the
         existing system our toolkit needs to integrate with, as their
         priorities sometimes conflicted with ours. To expedite their work and
