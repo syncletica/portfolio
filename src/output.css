@@ -588,11 +588,6 @@ body {
   position: static;
 }
 
-.mx-8 {
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -683,12 +678,6 @@ body {
   gap: 11rem;
 }
 
-.divide-y > :not([hidden]) ~ :not([hidden]) {
-  --tw-divide-y-reverse: 0;
-  border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
-  border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
-}
-
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -705,7 +694,6 @@ body {
 .border-b {
   border-bottom-width: 1px;
 }
-
 
 .border-\[\#48484F\] {
   --tw-border-opacity: 1;
@@ -876,8 +864,8 @@ body {
     margin-left: auto;
   }
 
-  .md\:max-w-3xl {
-    max-width: 48rem;
+  .md\:max-w-4xl {
+    max-width: 56rem;
   }
 
   .md\:grid-cols-2 {
@@ -890,10 +878,6 @@ body {
 
   .md\:flex-row {
     flex-direction: row;
-  }
-
-  .md\:gap-2 {
-    gap: 0.5rem;
   }
 
   .md\:p-0 {
