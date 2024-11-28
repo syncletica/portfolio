@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  a {
+    @apply text-[#AAAFF7];
+  }
+
+  h1, h2, h3 {
+    @apply text-[#EEEEF0]
+  }
+
+  hr {
+    @apply border-[#48484F]
+  }
+  header hr {
+    @apply border-none h-[2px];
+    background: linear-gradient(to right, #eafcb1, #AAAFF7);
+  }
+
+  body {
+    @apply bg-[#161818]
+  }
+}
+
+.underline-hover {
+  @apply relative inline-block text-[#AAAFF7];
+}
+
+.underline-hover::after {
+  content: "";
+  @apply block w-0 h-[2px] bg-[#AAAFF7] transition-all duration-200;
+}
+
+.underline-hover:hover::after {
+  @apply w-full;
+}

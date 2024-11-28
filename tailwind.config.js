@@ -7,7 +7,11 @@ module.exports = {
     "./pwa/index.html",
   ],
   theme: {
-    extend: {},
+    extend: {
+      listStyleType: {
+        dash: '"- "',
+      },
+    },
   },
   plugins: [],
 };
