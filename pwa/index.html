@@ -7,14 +7,6 @@
   <meta name="viewport" content="width=device-width">
   <link href="./../src/output.css" rel="stylesheet">
   <link rel="icon" href="./../src/favicon.ico" type="image/x-icon">
-  <script>
-    function openDialog(imageSrc, dialogId) {
-      const dialog = document.getElementById(dialogId);
-      const img = dialog.querySelector('img');
-      img.src = imageSrc;
-      dialog.showModal();
-    }
-  </script>
 </head>
 
 <body class="flex flex-col gap-44 p-0 font-sans text-[#B3B3BC] text-3xl">
@@ -37,7 +29,7 @@
   <main class="flex flex-col gap-10">
     <section class="flex flex-col gap-2 px-2 md:px-8">
       <h2 class="">Progressive Web App for Field Tasks</h2>
-      <p class="">
+      <p class="max-w-4xl">
         The goal was to create a Progressive Web App (PWA) that allows
         contractors and employees to complete tasks in the field when the
         native app is unavailable. I started by analyzing the workflow of the
@@ -50,7 +42,7 @@
       <img src="./../src/assets/wom_mobile.webp"
         alt="A mobile view of the work order, work operations, complete work, and add attachment pages."
         class="rounded-lg mb-4">
-      <p class="">
+      <p class="max-w-4xl">
         To emphasize the responsive behavior, I built a simple coded prototype
         instead of relying on additional static Figma frames. This interactive
         prototype allowed the dev team to explore the design in action,
@@ -73,7 +65,7 @@
       </a>
     </section>
   </main>
-  <footer class="">© 2024–Present, Bonita McBride</footer>
+  <footer class="">© Bonita McBride</footer>
 </body>
 
 </html>
