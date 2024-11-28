@@ -15,151 +15,102 @@
   <link rel="icon" href="./src/favicon.ico" type="image/x-icon">
 </head>
 
-<body class="bg-slate-50 flex flex-col gap-20 max-w-2xl mx-auto p-4 md:p-12 font-sans text-slate-800 text-base">
-  <header>
-    <h1 class="font-bold">Bonita McBride</h1>
+<body class="flex flex-col gap-44 md:p-0 font-sans text-[#B3B3BC] text-3xl">
+  <header class="md:text-6xl">
+    <h1 class="text-[#EEEEF0]">Bonita McBride</h1>
     <p>Design + Code</p>
-    <p>
-      bonita<b class="hidden">gecko</b>.design@proton.<b class="hidden">gecko</b>me
+    <p class="mb-4">
+      hello<b class="hidden">gecko</b>@<b class="hidden">gecko</b>bonita.design
     </p>
+    <hr>
   </header>
-  <main class="flex flex-col gap-12">
-    <section id="about" aria-labelledby="about-heading" class="flex flex-col gap-2">
-      <h2 id="about-heading" class="font-bold">About</h2>
-      <ul class="list-disc pl-4 text-slate-600">
-        <li>3+ years of experience as a UX designer</li>
-        <li>
-          Currently working at a small agency that specializes in industrial
-          digitization
-        </li>
-        <li>
-          Designed for enterprise and consumer products in industries like oil
-          and gas, energy retail, medical, and community services
-        </li>
-        <li>
-          Skilled in both coding and design, always ready to create a coded
-          prototype
-        </li>
-        <li>
-          Degree in philosophy, where I learned to think deeply and question
-          everything
-        </li>
-        <li>
-          Committed to making thoughtful design choices and delivering
-          polished, high-quality products
-        </li>
-        <li>
-          My priority is the team's success and, by extension, the product’s
-          success—doing whatever it takes to help get us there
-        </li>
-      </ul>
 
-      <a href="./about.html" class="hidden underline decoration-solid hover:decoration-wavy">Read More About Me</a>
+  <main class="flex flex-col gap-44">
+    <section id="about" aria-labelledby="about-heading" class="px-2 md:px-8">
+      <h2 id="about-heading" class="invisible">About</h2>
+      <p>I'm a UX designer with over three years of experience, currently working at a small agency specializing in
+        industrial digitization. I've designed B2B enterprise and consumer products across industries like oil and gas,
+        energy retail, medical, and community services. Skilled in both coding and design, I’m always ready to create
+        coded prototypes. My degree in philosophy taught me to think critically and question everything. I'm committed
+        to making thoughtful design choices and delivering polished, high-quality products, always prioritizing the
+        team’s success.</p>
     </section>
-    <section id="design-work" aria-labelledby="design-work-heading" class="flex flex-col gap-2">
-      <h2 id="design-work-heading" class="font-bold">Design Work</h2>
-      <ul class="flex flex-col md:gap-2">
-        <li>
-          <div class="project-item flex flex-col md:flex-row md:gap-2">
-            <a href="./toolkit/" class="underline decoration-solid hover:decoration-wavy hover:text-cyan-600">Production
-              Engineer
-              Toolkit</a>
-            <p class="text-slate-600">Designing a centralized workspace</p>
-            <span class="bg-slate-300 h-px flex-1 mt-3.5"></span>
-          </div>
-        </li>
-        <li>
-          <div class="project-item flex flex-col md:flex-row md:gap-2">
-            <a href="./pwa/" class="underline decoration-solid hover:decoration-wavy hover:text-cyan-600">PWA for
-              Field Tasks</a>
-            <p class="text-slate-600">
-              Rapid coded prototyping for responsive design
-            </p>
-            <span class="bg-slate-300 h-px flex-1 mt-3.5"></span>
-          </div>
-        </li>
-      </ul>
-      <div class="flex place-items-center h-10 bg-slate-100 rounded-md">
-        <p class="text-sm mx-auto text-slate-600">More coming soon...</p>
+
+    <section id="work-examples" aria-labelledby="work-examples-heading" class="flex flex-col gap-2">
+      <div class="px-2 md:px-8 py-2">
+        <h2 id="work-examples-heading">Work Examples</h2>
       </div>
-    </section>
-    <section class="hidden flex-col gap-2">
-      <h2 class="font-bold">Coding Projects</h2>
-      <ul class="flex flex-col md:gap-2">
-        <li>
-          <div class="project-item flex flex-col md:flex-row md:gap-2">
-            <a href="" class="underline decoration-solid hover:decoration-wavy hover:text-cyan-600">Project Title <i
-                class="fa-solid fa-arrow-right fa-xs"></i></a>
-            <p class="text-slate-600">Brief description.</p>
-            <span class="bg-slate-300 h-px flex-1 mt-3.5"></span>
-          </div>
+      <ul class="flex flex-col">
+        <li class="border-y border-[#48484F] px-2 md:px-8 py-4">
+          <a href="./toolkit/" class="inline-flex underline-hover">Production
+            Engineer
+            Toolkit</a>
+          <span class="inline-flex items-center px-3 py-1 bg-[#242541] text-[#AAAFF7] text-xl rounded-lg">
+            DESIGN
+          </span>
+          <p class="">Designing a centralized workspace</p>
         </li>
-        <li>
-          <div class="project-item flex flex-col md:flex-row md:gap-2">
-            <a href="" class="underline decoration-solid hover:decoration-wavy hover:text-cyan-600">Project Title <i
-                class="fa-solid fa-arrow-right fa-xs"></i></a>
-            <p class="text-slate-600">Brief description.</p>
-            <span class="bg-slate-300 h-px flex-1 mt-3.5"></span>
-          </div>
-        </li>
-      </ul>
-    </section>
-    <section id="experience" aria-labelledby="experience-heading" class="flex flex-col gap-2">
-      <h2 id="experience-heading" class="font-bold">Experience</h2>
-      <ul class="flex flex-col gap-2">
-        <li class="flex flex-col gap-2">
-          <div class="flex flex-col md:flex-row md:gap-2">
-            <p class="">UX Designer II</p>
-            <span class="hidden md:block">•</span>
-            <p>ChaiOne</p>
-            <span class="invisible md:visible bg-slate-300 h-px flex-1 md:mt-3.5"></span>
-            <time datetime="2022-07-01" class="md:ml-auto text-slate-600">Jul 2022 - Present</time>
-          </div>
-        </li>
-        <li class="flex flex-col gap-2">
-          <div class="flex flex-col md:flex-row md:gap-2">
-            <p class="">UX Designer</p>
-            <span class="hidden md:block">•</span>
-            <p>Ion Prototyping Lab</p>
-            <span class="invisible md:visible bg-slate-300 h-px flex-1 md:mt-3.5"></span>
-            <time datetime="2022-07-01" class="md:ml-auto text-slate-600">Jan - Jul 2022</time>
-          </div>
-        </li>
-        <li class="flex flex-col gap-2">
-          <div class="flex flex-col md:flex-row md:gap-2">
-            <p class="">Search Engine Analyst</p>
-            <span class="hidden md:block">•</span>
-            <p>Appen</p>
-            <span class="invisible md:visible bg-slate-300 h-px flex-1 md:mt-3.5"></span>
-            <time datetime="2022-07-01" class="md:ml-auto text-slate-600">Jan 2019 - Jan 2022</time>
-          </div>
+        <li class="border-b-1 border-[#48484F] px-2 md:px-8 py-4">
+          <a href="./pwa/" class="inline-flex underline-hover">PWA for
+            Field Tasks</a>
+          <span class="inline-flex items-center px-3 py-1 bg-[#242541] text-[#AAAFF7] text-xl rounded-lg">
+            DESIGN
+          </span>
+          <span class="inline-flex items-center px-3 py-1 bg-[#242541] text-[#AAAFF7] text-xl rounded-lg">
+            CODE
+          </span>
+          <p class="">
+            Rapid coded prototyping for responsive design
+          </p>
         </li>
       </ul>
     </section>
-    <section id="colophon" aria-labelledby="colophon-heading" class="flex-col gap-2">
-      <h3 id="colophon-heading" class="font-semibold pb-2">Colophon</h3>
-      <p class="pb-10 text-slate-600">
+
+    <section id="experience" aria-labelledby="experience-heading" class="flex flex-col">
+      <div class="px-2 md:px-8 py-2">
+        <h2 id="experience-heading">Experience</h2>
+      </div>
+      <ul class="flex flex-col">
+        <li class="border-y border-[#48484F] grid md:grid-cols-3 px-2 md:px-8 py-4">
+          <p>UX Designer II</p>
+          <p class="md:m-auto">ChaiOne</p>
+          <time datetime="2022-07-01" class="md:ml-auto">Jul 2022 - Present</time>
+        </li>
+        <li class="grid md:grid-cols-3 px-2 md:px-8 py-4">
+          <p>UX Designer</p>
+          <p class="md:m-auto">Ion Prototyping Lab</p>
+          <time datetime="2022-07-01" class="md:ml-auto">Jan - Jul 2022</time>
+        </li>
+        <li class="border-y border-[#48484F] grid md:grid-cols-3 px-2 md:px-8 py-4">
+          <p>Search Engine Analyst</p>
+          <p class="md:m-auto">Appen</p>
+          <time datetime="2022-07-01" class="md:ml-auto">Jan 2019 - Jan 2022</time>
+        </li>
+      </ul>
+    </section>
+    <section id="colophon" aria-labelledby="colophon-heading" class="flex-col gap-2 px-2 md:px-8 md:max-w-3xl">
+      <h3 id="colophon-heading" class="pb-2">Colophon</h3>
+      <p class="pb-10">
         This portfolio is hand-coded with HTML, CSS, and JavaScript, inspired by
-        <a href="https://deadsimplesites.com/" target="_blank"
-          class="inline-flex items-center group hover:text-cyan-600">
-          <span
-            class="underline decoration-solid transition-colors duration-200 ease-in-out hover:decoration-wavy hover:text-cyan-600">
+        <a href="https://deadsimplesites.com/" target="_blank" class="inline-flex items-center">
+          <span class="underline-hover">
             Dead Simple Sites
           </span>
-          <svg class="inline-block transition-colors duration-200 ease-in-out group-hover:fill-cyan-600" width="16"
-            height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#64748b">
+          <svg class="inline-block" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+            fill="#AAAFF7">
             <g>
               <path d="M0 0h24v24H0z" fill="none" />
               <path d="M16.004 9.414l-8.607 8.607-1.414-1.414L14.589 8H7.004V6h11v11h-2V9.414z" />
             </g>
-          </svg> </a>, emphasizing simplicity, performance, and a no-nonsense approach to
+          </svg>
+        </a>
+        , emphasizing simplicity, performance, and a no-nonsense approach to
         design.
       </p>
     </section>
   </main>
   <footer class="">
-
-    <p class="text-slate-600">© 2024–Present, Bonita McBride</p>
+    <p>© 2024–Present, Bonita McBride</p>
   </footer>
 </body>
 
