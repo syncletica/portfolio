@@ -638,6 +638,18 @@ body {
   max-width: 56rem;
 }
 
+.max-w-8 {
+  max-width: 2rem;
+}
+
+.max-w-7xl {
+  max-width: 80rem;
+}
+
+.max-w-5xl {
+  max-width: 64rem;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -676,6 +688,10 @@ body {
 
 .gap-44 {
   gap: 11rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .rounded-lg {
