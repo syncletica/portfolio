@@ -15,8 +15,7 @@
     @apply border-[#48484F]
   }
   header hr {
-    @apply border-none h-[2px];
-    background: linear-gradient(to right, #d6ff54, #94ffc3, #6336ff);
+    @apply border-none h-[2px] bg-gradient-to-r from-[#d6ff54] via-[#94ffc3] to-[#6336ff] bg-[length:200%_200%] animate-gradient;
   }
 
   body {
