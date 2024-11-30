@@ -16,7 +16,7 @@
   }
   header hr {
     @apply border-none h-[2px];
-    background: linear-gradient(to right, #eafcb1, #AAAFF7);
+    background: linear-gradient(to right, #d6ff54, #94ffc3, #6336ff);
   }
 
   body {

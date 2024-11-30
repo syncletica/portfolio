@@ -572,7 +572,7 @@ hr {
 header hr {
   height: 2px;
   border-style: none;
-  background: linear-gradient(to right, #eafcb1, #AAAFF7);
+  background: linear-gradient(to right, #d6ff54, #94ffc3, #6336ff);
 }
 
 body {
@@ -916,11 +916,6 @@ body {
 
   .md\:text-6xl {
     font-size: 3.75rem;
-    line-height: 1;
-  }
-
-  .md\:text-8xl {
-    font-size: 6rem;
     line-height: 1;
   }
 }
