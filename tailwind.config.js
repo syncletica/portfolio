@@ -13,12 +13,12 @@ module.exports = {
       },
       keyframes: {
         gradientMove: {
-          '0%': { backgroundPosition: '0% 50%' },
-          '100%': { backgroundPosition: '100% 50%' },
+          '0%': { backgroundPosition: '-100% 50%' }, // Start off-screen to the left
+          '100%': { backgroundPosition: '100% 50%' }, // End off-screen to the right
         },
       },
       animation: {
-        gradient: 'gradientMove 3s linear infinite alternate',
+        gradient: 'gradientMove 8s linear infinite', // Smooth left-to-right motion
       },
     },
   },

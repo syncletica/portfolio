@@ -559,7 +559,9 @@ a {
   color: rgb(170 175 247 / var(--tw-text-opacity, 1));
 }
 
-h1, h2, h3 {
+h1,
+  h2,
+  h3 {
   --tw-text-opacity: 1;
   color: rgb(238 238 240 / var(--tw-text-opacity, 1));
 }
@@ -575,7 +577,7 @@ header hr {
 
 @keyframes gradientMove {
   0% {
-    background-position: 0% 50%;
+    background-position: -100% 50%;
   }
 
   100% {
@@ -584,15 +586,15 @@ header hr {
 }
 
 header hr {
-  animation: gradientMove 3s linear infinite alternate;
+  animation: gradientMove 8s linear infinite;
   border-style: none;
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
-  --tw-gradient-from: #d6ff54 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(214 255 84 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-from: #5964fc var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(89 100 252 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-  --tw-gradient-to: rgb(148 255 195 / 0)  var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), #94ffc3 var(--tw-gradient-via-position), var(--tw-gradient-to);
-  --tw-gradient-to: #6336ff var(--tw-gradient-to-position);
+  --tw-gradient-to: rgb(205 253 165 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), #cdfda5 var(--tw-gradient-via-position), var(--tw-gradient-to);
+  --tw-gradient-to: #5964fc var(--tw-gradient-to-position);
   background-size: 200% 200%;
 }
 

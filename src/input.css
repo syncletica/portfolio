@@ -7,19 +7,22 @@
     @apply text-[#AAAFF7];
   }
 
-  h1, h2, h3 {
-    @apply text-[#EEEEF0]
+  h1,
+  h2,
+  h3 {
+    @apply text-[#EEEEF0];
   }
 
   hr {
-    @apply border-[#48484F]
+    @apply border-[#48484F];
   }
+  
   header hr {
-    @apply border-none h-[2px] bg-gradient-to-r from-[#d6ff54] via-[#94ffc3] to-[#6336ff] bg-[length:200%_200%] animate-gradient;
+    @apply border-none h-[2px] bg-gradient-to-r from-[#5964fc] via-[#cdfda5] to-[#5964fc] bg-[length:200%_200%] animate-gradient;
   }
 
   body {
-    @apply bg-[#161818]
+    @apply bg-[#161818];
   }
 }
 
